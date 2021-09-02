@@ -60,3 +60,8 @@ C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Debug
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Debug\netcoreapp3.1\API_NetCore_WebApp.dll
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Debug\netcoreapp3.1\API_NetCore_WebApp.pdb
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Debug\netcoreapp3.1\API_NetCore_WebApp.genruntimeconfig.cache
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Debug\netcoreapp3.1\API_NetCore_WebApp.MvcApplicationPartsAssemblyInfo.cs

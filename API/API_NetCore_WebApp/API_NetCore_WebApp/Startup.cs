@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Serialization;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
+using Microsoft.OpenApi.Models;
 
 namespace API_NetCore_WebApp
 {
@@ -28,8 +29,13 @@ namespace API_NetCore_WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             //Enable CORS
-            services.AddCors(c=> {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", 
+                    options => 
+                    options.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
             });
 
             //JSON Serializer
@@ -38,18 +44,41 @@ namespace API_NetCore_WebApp
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             services.AddControllers();
+            //Se agrega swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Employee WebApp"
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             //Enable CORS
-            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(
+                options => 
+                options.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //Habilitar Swagger
+            app.UseSwagger();
+
+            //Indica la ruta para generar la configuración de swagger
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee WebApp");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
@@ -62,9 +91,8 @@ namespace API_NetCore_WebApp
 
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider=new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(),"Photos")),
-                    RequestPath="/Photos"
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Photos")),
+                RequestPath = "/Photos"
             });
         }
     }
