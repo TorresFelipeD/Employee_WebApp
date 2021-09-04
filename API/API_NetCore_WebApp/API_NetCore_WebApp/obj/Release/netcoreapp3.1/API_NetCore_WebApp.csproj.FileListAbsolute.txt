@@ -20,7 +20,6 @@ C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Relea
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.csproj.AssemblyReference.cache
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.AssemblyInfoInputs.cache
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.AssemblyInfo.cs
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.csproj.CoreCompileInputs.cache
@@ -34,3 +33,4 @@ C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Relea
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.dll
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.pdb
 C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.genruntimeconfig.cache
+C:\PROYECTOS\Employee_WebApp\API\API_NetCore_WebApp\API_NetCore_WebApp\obj\Release\netcoreapp3.1\API_NetCore_WebApp.csproj.AssemblyReference.cache

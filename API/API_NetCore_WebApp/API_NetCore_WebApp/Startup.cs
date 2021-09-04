@@ -29,13 +29,14 @@ namespace API_NetCore_WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             //Enable CORS
-            services.AddCors(c =>
+            services.AddCors(options =>
             {
-                c.AddPolicy("AllowOrigin", 
-                    options => 
-                    options.AllowAnyOrigin()
+                options.AddPolicy("AllowOrigin", builder =>
+                {
+                    builder.AllowAnyOrigin()
                     .AllowAnyMethod()
-                    .AllowAnyHeader());
+                    .AllowAnyHeader();
+                });
             });
 
             //JSON Serializer
@@ -59,11 +60,7 @@ namespace API_NetCore_WebApp
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             //Enable CORS
-            app.UseCors(
-                options => 
-                options.AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
+            app.UseCors("AllowOrigin");
 
             if (env.IsDevelopment())
             {
